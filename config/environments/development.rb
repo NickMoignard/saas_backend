@@ -53,4 +53,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.action_mailer.default_url_options = { host: ENV['DEFAULT_URL'] }
+  config.assets.check_precompiled_asset = false
 end

@@ -86,4 +86,5 @@ group :development do
   gem 'rubocop'                             # rubocop for linting ruby code
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "graphiql-rails"
 end

@@ -1,3 +1,10 @@
+setup postgres
+check logs for super user email confirmation (after seeded) confirm account
+sign in to /admin
+test user login at /graphiql
+
+
+
 # 💎 Rails 6 boilerplate with devise, JWT, graphQL, CanCanCan and RailsAdmin.
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/zauberware/rails-devise-graphql/graphs/commit-activity)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/zauberware/rails-devise-graphql/blob/master/LICENSE)

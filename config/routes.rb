@@ -15,4 +15,8 @@ Rails.application.routes.draw do
 
   # Just a blank root path
   root 'pages#blank'
+
+  if Rails.env.development?
+    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
+  end
 end
