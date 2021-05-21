@@ -9,12 +9,13 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
+    # TODO - Correctly implement CORS
     # origins ENV['CLIENT_URL'] ? ENV['CLIENT_URL'].split(',').map(&:strip) : '0.0.0.0:8000'
 
     origins '*'
     resource '*',
-             headers: :any,
-             expose: ['Authorization'],
-             methods: %i[get post options delete put]
+             headers: %w(Authorization Expires RefreshToken),
+             expose: %w(Authorization Expires RefreshToken),
+             methods: :any
   end
 end

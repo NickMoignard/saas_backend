@@ -15,5 +15,6 @@ module Types
 
     # Company
     field :update_company, mutation: Mutations::Companies::UpdateCompany
+    field :create_company, mutation: Mutations::Companies::CreateCompany
   end
 end
